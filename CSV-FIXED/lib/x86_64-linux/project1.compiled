@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1611610588"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fi/home/aruna/lazarus/CSV-FIXED/lib/x86_64-linux -Fu/home/aruna/lazarus/lcl/units/x86_64-linux/gtk2 -Fu/home/aruna/lazarus/lcl/units/x86_64-linux -Fu/home/aruna/lazarus/components/freetype/lib/x86_64-linux -Fu/home/aruna/lazarus/components/lazutils/lib/x86_64-linux -Fu/home/aruna/lazarus/packager/units/x86_64-linux -Fu/home/aruna/lazarus/CSV-FIXED/ -FU/home/aruna/lazarus/CSV-FIXED/lib/x86_64-linux/ -FE/home/aruna/lazarus/CSV-FIXED/ -o/home/aruna/lazarus/CSV-FIXED/project1 -dLCL -dLCLgtk2 project1.lpr"/>
+</CONFIG>
