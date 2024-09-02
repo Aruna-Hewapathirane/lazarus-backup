@@ -11,76 +11,54 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit>
       <Unit>
         <Filename Value="unit1.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="104"/>
-        <CursorPos X="18" Y="116"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="142"/>
+        <CursorPos X="35" Y="154"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../lazarus3/lazarus/lcl/controls.pp"/>
         <UnitName Value="Controls"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="1594"/>
-        <CursorPos X="28" Y="1601"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1810"/>
+        <CursorPos X="23" Y="1819"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../lazarus3/lazarus/lcl/include/control.inc"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="1616"/>
         <CursorPos Y="1626"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../lazarus3/lazarus/lcl/include/wincontrol.inc"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="5387"/>
         <CursorPos Y="5396"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../lazarus3/lazarus/lcl/include/customform.inc"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="1434"/>
         <CursorPos Y="1443"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="29" Column="15" TopLine="29"/>
-      </Position>
-      <Position>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="30" Column="17" TopLine="23"/>
-      </Position>
-      <Position>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="85" Column="52" TopLine="77"/>
-      </Position>
-      <Position>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="30" Column="18" TopLine="23"/>
-      </Position>
-      <Position>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="120" Column="3" TopLine="105"/>
-      </Position>
+    <JumpHistory HistoryIndex="24">
       <Position>
         <Filename Value="unit1.pas"/>
         <Caret Line="102" Column="3" TopLine="88"/>
@@ -127,10 +105,6 @@
       </Position>
       <Position>
         <Filename Value="unit1.pas"/>
-        <Caret Line="28" TopLine="70"/>
-      </Position>
-      <Position>
-        <Filename Value="unit1.pas"/>
         <Caret Line="74" Column="10" TopLine="66"/>
       </Position>
       <Position>
@@ -158,28 +132,32 @@
         <Caret Line="75" TopLine="68"/>
       </Position>
       <Position>
-        <Filename Value="../../lazarus3/lazarus/lcl/include/control.inc"/>
-        <Caret Line="2976" TopLine="2967"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="154" Column="73" TopLine="145"/>
       </Position>
       <Position>
-        <Filename Value="../../lazarus3/lazarus/lcl/include/control.inc"/>
-        <Caret Line="2978" TopLine="2967"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="161" Column="73" TopLine="152"/>
       </Position>
       <Position>
-        <Filename Value="../../lazarus3/lazarus/lcl/include/control.inc"/>
-        <Caret Line="2846" TopLine="2837"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="132" Column="34" TopLine="132"/>
       </Position>
       <Position>
-        <Filename Value="../../lazarus3/lazarus/lcl/include/control.inc"/>
-        <Caret Line="1626" TopLine="1616"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Column="11"/>
       </Position>
       <Position>
-        <Filename Value="../../lazarus3/lazarus/lcl/include/wincontrol.inc"/>
-        <Caret Line="4774" TopLine="4765"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="155" Column="35" TopLine="140"/>
       </Position>
       <Position>
-        <Filename Value="../../lazarus3/lazarus/lcl/include/wincontrol.inc"/>
-        <Caret Line="5396" TopLine="5387"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="162" Column="35" TopLine="147"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="144" Column="55" TopLine="133"/>
       </Position>
     </JumpHistory>
     <RunParams>

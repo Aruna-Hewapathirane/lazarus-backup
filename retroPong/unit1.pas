@@ -5,13 +5,15 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
+  Process;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
+    Button1: TButton;
     lblGameOver: TLabel;
     Restart: TLabel;
     tmrGame: TTimer;
@@ -19,6 +21,7 @@ type
     lblScore: TLabel;
     Paddle: TShape;
     Ball: TShape;
+    procedure Button1Click(Sender: TObject);
     procedure ControlPaddle(Sender: TObject; Shift: TShiftState; X, Y: Integer);
     procedure FormCreate(Sender: TObject);
     procedure PaddleMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
@@ -31,6 +34,7 @@ type
     procedure InitGame;
     procedure UpdateScore;
     procedure GameOver;
+    procedure PlaySound(const FileName: string);
 
   public
 
@@ -54,6 +58,12 @@ procedure TForm1.ControlPaddle(Sender: TObject; Shift: TShiftState; X,
 begin
   Paddle.Left:=X- Paddle.Width div 2;
   Paddle.Top:=ClientHeight-Paddle.Height-2;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+//  PlaySound('/home/aruna/lazarus/retroPong/Sound-Assets/Kawai-K5000W-Ding(1).wav')
+    PlaySound('Sound-Assets/Kawai-K5000W-Ding(1).wav')
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
@@ -131,6 +141,7 @@ procedure TForm1.UpdateScore;
 begin
 //  Score:=Score+1;
   Inc(Score,10);
+  PlaySound('Sound-Assets/Kawai-K5000W-Ding(1).wav');
   lblScore.Caption:= 'Score:   ' + IntToStr(Score);
 end;
 
@@ -140,7 +151,27 @@ begin
   lblGameOver.Visible := True;
   Restart.Visible:=True;
   YoutubeURL.Visible  := True; // Original Youtube Tutorial Link
+  PlaySound('Sound-Assets/gameover.wav');
 end;
+
+
+procedure TForm1.PlaySound(const FileName: string);
+var
+  ProcessPlayer: TProcess;
+begin
+  ProcessPlayer := TProcess.Create(nil);
+  try
+    ProcessPlayer.Executable := 'aplay';
+    ProcessPlayer.Parameters.Add(FileName);
+    ProcessPlayer.Options := [];
+    ProcessPlayer.Execute;
+  finally
+    ProcessPlayer.Free;
+  end;
+end;
+
+
+
 
 end.
 
