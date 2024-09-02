@@ -1,0 +1,83 @@
+object Form1: TForm1
+  Left = 472
+  Height = 677
+  Top = 261
+  Width = 800
+  Caption = 'Retro Pong'
+  ClientHeight = 677
+  ClientWidth = 800
+  Color = clBlack
+  OnMouseMove = ControlPaddle
+  LCLVersion = '3.4.0.0'
+  object Paddle: TShape
+    Left = 424
+    Height = 24
+    Top = 632
+    Width = 152
+  end
+  object Ball: TShape
+    Left = 8
+    Height = 20
+    Top = 8
+    Width = 20
+    Shape = stSquare
+  end
+  object Score: TLabel
+    Left = 495
+    Height = 40
+    Top = 8
+    Width = 298
+    Alignment = taRightJustify
+    Anchors = [akTop, akRight]
+    AutoSize = False
+    Caption = 'Score:0000'
+    Color = clWhite
+    Font.Color = clWhite
+    Font.Height = -48
+    Font.Name = 'Lucida Console'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 51
+    Top = 224
+    Width = 798
+    Alignment = taCenter
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = False
+    Caption = 'Game Over'
+    Font.Color = clWhite
+    Font.Height = -37
+    Font.Name = 'Lucida Console'
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 0
+    Height = 50
+    Top = 280
+    Width = 798
+    Alignment = taCenter
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = False
+    Caption = 'Restart'
+    Font.Color = clWhite
+    Font.Height = -32
+    Font.Name = 'Lucida Console'
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 2
+    Height = 50
+    Top = 336
+    Width = 798
+    Alignment = taCenter
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = False
+    Caption = 'https://www.youtube.com/watch?v=C8hLHHOaOQQ'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Lucida Console'
+    ParentFont = False
+  end
+end
