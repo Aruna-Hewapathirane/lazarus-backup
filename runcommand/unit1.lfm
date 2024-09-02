@@ -1,0 +1,23 @@
+object Form1: TForm1
+  Left = 243
+  Height = 364
+  Top = 257
+  Width = 1143
+  Caption = 'Form1'
+  ClientHeight = 364
+  ClientWidth = 1143
+  OnCreate = FormCreate
+  LCLVersion = '3.4.0.0'
+  object Memo1: TMemo
+    Left = 17
+    Height = 303
+    Top = 49
+    Width = 935
+    Font.Height = -13
+    Font.Name = 'Monospace'
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+  end
+end
