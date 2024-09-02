@@ -12,16 +12,25 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
-    Label1: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
-    Score: TLabel;
+    lblGameOver: TLabel;
+    Restart: TLabel;
+    tmrGame: TTimer;
+    YoutubeURL: TLabel;
+    lblScore: TLabel;
     Paddle: TShape;
     Ball: TShape;
     procedure ControlPaddle(Sender: TObject; Shift: TShiftState; X, Y: Integer);
+    procedure FormCreate(Sender: TObject);
     procedure PaddleMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
+    procedure RestartClick(Sender: TObject);
+    procedure RestartMouseEnter(Sender: TObject);
+    procedure RestartMouseLeave(Sender: TObject);
+    procedure tmrGameTimer(Sender: TObject);
   private
+    procedure InitGame;
+    procedure UpdateScore;
+    procedure GameOver;
 
   public
 
@@ -29,6 +38,8 @@ type
 
 var
   Form1: TForm1;
+  Score:Integer;
+  SpeedX,SpeedY:Integer;
 
 implementation
 
@@ -36,6 +47,8 @@ implementation
 
 { TForm1 }
 
+
+// Controls paddle Movemnet when mouse cursor is on FORM
 procedure TForm1.ControlPaddle(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
@@ -43,10 +56,90 @@ begin
   Paddle.Top:=ClientHeight-Paddle.Height-2;
 end;
 
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+     DoubleBuffered:=True; //prevents lag (??)
+     InitGame;
+end;
+
+// Controls paddle Movemnet when mouse cursor is on PADDLE
 procedure TForm1.PaddleMouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
      ControlPaddle(Sender,Shift, X+Paddle.Left,Y+Paddle.Top)
+end;
+
+procedure TForm1.RestartClick(Sender: TObject);
+begin
+       InitGame;
+end;
+
+procedure TForm1.RestartMouseEnter(Sender: TObject);
+begin
+       Restart.Font.Style:=[fsBold];
+       Restart.Font.Size:=28;
+end;
+
+procedure TForm1.RestartMouseLeave(Sender: TObject);
+begin
+  Restart.Font.Style:=[];
+  Restart.Font.Size:=18;
+end;
+
+procedure TForm1.tmrGameTimer(Sender: TObject);
+begin
+  Ball.Left:=Ball.Left+SpeedX;
+  Ball.Top:=Ball.Top+SpeedY;
+
+  if (Ball.Top<=0) then SpeedY:=-SpeedY; // Hit Top Boundary so reverse direction
+  if(Ball.Left <=0 ) or (Ball.Left+Ball.Width >=ClientWidth) then SpeedX:=-SpeedX; //check if left wall hit or right wall hit
+
+  if(Ball.Left+Ball.Width >= Paddle.Left) and
+    (Ball.Left <=Paddle.Left+Paddle.Width) and
+    (Ball.Top+Ball.Height >= Paddle.Top) then
+  begin
+    SpeedY:=-SpeedY;
+    UpdateScore;
+  end;
+
+  If (Ball.Top+Ball.Height > ClientHeight) then GameOver;
+
+end;
+
+procedure TForm1.InitGame;
+begin
+     Score:=0;
+     SpeedX:=3;
+     SpeedY:=3;
+
+     Ball.Left:=10;
+     Ball.Top:=10;
+
+     lblGameOver.Visible:=False;
+     Restart.Visible:=False;
+     YoutubeURL.Visible:=False; // Original Youtube Tutorial Link
+
+     tmrGame.Enabled:=True;
+     tmrGame.Interval:=16;
+     UpdateScore;
+end;
+
+// Try using direct call to UpdateScore
+// unit1.pas(89,3) Error: Identifier not found "lblScore"
+// then use TForm1.UpdateScore
+procedure TForm1.UpdateScore;
+begin
+//  Score:=Score+1;
+  Inc(Score,10);
+  lblScore.Caption:= 'Score:   ' + IntToStr(Score);
+end;
+
+procedure TForm1.GameOver;
+begin
+  tmrGame.Enabled:=False;
+  lblGameOver.Visible := True;
+  Restart.Visible:=True;
+  YoutubeURL.Visible  := True; // Original Youtube Tutorial Link
 end;
 
 end.

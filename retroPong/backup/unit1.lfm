@@ -7,6 +7,7 @@ object Form1: TForm1
   ClientHeight = 677
   ClientWidth = 800
   Color = clBlack
+  OnCreate = FormCreate
   OnMouseMove = ControlPaddle
   LCLVersion = '3.4.0.0'
   object Paddle: TShape
@@ -14,6 +15,7 @@ object Form1: TForm1
     Height = 24
     Top = 632
     Width = 152
+    OnMouseMove = PaddleMouseMove
   end
   object Ball: TShape
     Left = 8
@@ -22,7 +24,7 @@ object Form1: TForm1
     Width = 20
     Shape = stSquare
   end
-  object Score: TLabel
+  object lblScore: TLabel
     Left = 495
     Height = 40
     Top = 8
@@ -38,7 +40,7 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
   end
-  object Label1: TLabel
+  object lblGameOver: TLabel
     Left = 0
     Height = 51
     Top = 224
@@ -52,7 +54,7 @@ object Form1: TForm1
     Font.Name = 'Lucida Console'
     ParentFont = False
   end
-  object Label2: TLabel
+  object Restart: TLabel
     Left = 0
     Height = 50
     Top = 280
@@ -62,11 +64,14 @@ object Form1: TForm1
     AutoSize = False
     Caption = 'Restart'
     Font.Color = clWhite
-    Font.Height = -32
+    Font.Height = -24
     Font.Name = 'Lucida Console'
     ParentFont = False
+    OnClick = RestartClick
+    OnMouseEnter = RestartMouseEnter
+    OnMouseLeave = RestartMouseLeave
   end
-  object Label3: TLabel
+  object YoutubeURL: TLabel
     Left = 2
     Height = 50
     Top = 336
@@ -79,5 +84,12 @@ object Form1: TForm1
     Font.Height = -21
     Font.Name = 'Lucida Console'
     ParentFont = False
+  end
+  object tmrGame: TTimer
+    Enabled = False
+    Interval = 16
+    OnTimer = tmrGameTimer
+    Left = 40
+    Top = 8
   end
 end
