@@ -1,0 +1,61 @@
+object Form1: TForm1
+  Left = 512
+  Height = 240
+  Top = 333
+  Width = 742
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 742
+  OnShow = FormShow
+  LCLVersion = '3.4.0.0'
+  object Button1: TButton
+    Left = 498
+    Height = 25
+    Top = 24
+    Width = 177
+    Caption = 'Move Window'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    Left = 498
+    Height = 20
+    Top = 200
+    Width = 181
+    Caption = 'This is a Linux only thing !'
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 206
+    Top = 0
+    Width = 458
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 496
+    Height = 20
+    Top = 96
+    Width = 170
+    Caption = 'Workspace to switch to.'
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 496
+    Height = 30
+    Top = 160
+    Width = 50
+    MaxValue = 3
+    MinValue = -1
+    TabOrder = 2
+    Value = -1
+  end
+  object Label3: TLabel
+    Left = 498
+    Height = 20
+    Top = 131
+    Width = 165
+    Caption = '-1 for "this" workspace.'
+  end
+end
