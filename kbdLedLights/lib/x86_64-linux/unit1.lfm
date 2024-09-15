@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 456
+  Height = 51
+  Top = 470
+  Width = 832
+  Caption = 'Form1'
+  ClientHeight = 51
+  ClientWidth = 832
+  LCLVersion = '3.4.0.0'
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 12
+    Width = 75
+    Caption = 'On'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 296
+    Top = 152
+    Width = 785
+    Lines.Strings = (
+      'Memo1'
+    )
+    ScrollBars = ssAutoBoth
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 88
+    Height = 25
+    Top = 12
+    Width = 75
+    Caption = 'Off'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Process1: TProcess
+    Active = False
+    Options = []
+    Priority = ppNormal
+    StartupOptions = []
+    ShowWindow = swoNone
+    WindowColumns = 0
+    WindowHeight = 0
+    WindowLeft = 0
+    WindowRows = 0
+    WindowTop = 0
+    WindowWidth = 0
+    FillAttribute = 0
+    Left = 776
+    Top = 8
+  end
+end
