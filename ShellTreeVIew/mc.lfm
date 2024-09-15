@@ -1,0 +1,32 @@
+object Form1: TForm1
+  Left = 462
+  Height = 600
+  Top = 223
+  Width = 800
+  Caption = 'TShellTreeView + TListBox'
+  ClientHeight = 600
+  ClientWidth = 800
+  LCLVersion = '3.4.0.0'
+  object ShellTreeView1: TShellTreeView
+    Left = 0
+    Height = 600
+    Top = 0
+    Width = 384
+    Align = alLeft
+    FileSortType = fstNone
+    TabOrder = 0
+    OnChange = ShellTreeView1Change
+    ObjectTypes = [otFolders]
+  end
+  object ListBox1: TListBox
+    Left = 384
+    Height = 600
+    Top = 0
+    Width = 416
+    Align = alLeft
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ItemHeight = 0
+    TabOrder = 1
+    TopIndex = -1
+  end
+end
