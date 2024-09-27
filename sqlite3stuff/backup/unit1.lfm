@@ -1,0 +1,72 @@
+object Form1: TForm1
+  Left = 346
+  Height = 360
+  Top = 202
+  Width = 1194
+  Caption = 'Form1'
+  ClientHeight = 360
+  ClientWidth = 1194
+  LCLVersion = '3.4.0.0'
+  object ListBoxTables: TListBox
+    AnchorSideRight.Control = StringGrid1
+    Left = 200
+    Height = 360
+    Top = 0
+    Width = 248
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ItemHeight = 0
+    TabOrder = 1
+    TopIndex = -1
+    OnDblClick = ListBoxTablesClick
+  end
+  object StringGrid1: TStringGrid
+    Left = 448
+    Height = 360
+    Top = 0
+    Width = 672
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabOrder = 2
+  end
+  object btnLoadTables: TButton
+    Left = 8
+    Height = 61
+    Top = 8
+    Width = 187
+    Caption = 'Choose SQLite DataBsae'
+    TabOrder = 0
+    OnClick = btnLoadTablesClick
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 61
+    Top = 72
+    Width = 187
+    Caption = 'Adjust Column Widths'
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    AlwaysUseBigint = False
+    Left = 1248
+    Top = 72
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 1248
+    Top = 136
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Left = 1248
+    Top = 208
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Params = <>
+    Macros = <>
+    Left = 1248
+    Top = 296
+  end
+end
