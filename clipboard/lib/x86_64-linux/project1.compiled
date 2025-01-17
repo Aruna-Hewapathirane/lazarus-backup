@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/local/bin/fpc" Date="1736563698"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -gw3 -gl -l -vewnhibq -Fi/home/aruna/lazarus/clipboardMonitor/lib/x86_64-linux -Fu/usr/share/lazarus/3.4.0/lcl/units/x86_64-linux/gtk2 -Fu/usr/share/lazarus/3.4.0/lcl/units/x86_64-linux -Fu/usr/share/lazarus/3.4.0/components/freetype/lib/x86_64-linux -Fu/usr/share/lazarus/3.4.0/components/lazutils/lib/x86_64-linux -Fu/usr/share/lazarus/3.4.0/packager/units/x86_64-linux -Fu/home/aruna/lazarus/clipboardMonitor/ -FU/home/aruna/lazarus/clipboardMonitor/lib/x86_64-linux/ -FE/home/aruna/lazarus/clipboardMonitor/ -o/home/aruna/lazarus/clipboardMonitor/project1 -dLCL -dLCLgtk2 project1.lpr"/>
+</CONFIG>
