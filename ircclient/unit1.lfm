@@ -1,0 +1,76 @@
+object Form1: TForm1
+  Left = 352
+  Height = 642
+  Top = 229
+  Width = 1018
+  Caption = 'Form1'
+  ClientHeight = 642
+  ClientWidth = 1018
+  LCLVersion = '3.4.0.0'
+  object MemoChat: TMemo
+    Left = 24
+    Height = 528
+    Top = 64
+    Width = 728
+    Lines.Strings = (
+      'MemoChat'
+    )
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+  end
+  object BtnConnect: TButton
+    Left = 24
+    Height = 35
+    Top = 8
+    Width = 90
+    Caption = 'BtnConnect'
+    TabOrder = 1
+    OnClick = BtnConnectClick
+  end
+  object EditChannel: TEdit
+    Left = 120
+    Height = 35
+    Top = 8
+    Width = 90
+    TabOrder = 2
+    Text = 'EditChannel'
+  end
+  object EditMessage: TEdit
+    Left = 104
+    Height = 35
+    Top = 600
+    Width = 648
+    TabOrder = 3
+    Text = 'EditMessage'
+  end
+  object BtnSend: TButton
+    Left = 24
+    Height = 35
+    Top = 602
+    Width = 75
+    Caption = 'BtnSend'
+    TabOrder = 4
+    OnClick = BtnSendClick
+  end
+  object ListUsers: TListBox
+    Left = 760
+    Height = 528
+    Top = 64
+    Width = 188
+    ItemHeight = 0
+    TabOrder = 5
+    TopIndex = -1
+  end
+  object LabelChannel: TLabel
+    Left = 216
+    Height = 19
+    Top = 8
+    Width = 90
+    Caption = 'LabelChannel'
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 912
+    Top = 16
+  end
+end
