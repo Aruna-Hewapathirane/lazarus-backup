@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="6"/>
+        <CursorPos Y="23"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="74"/>
+        <CursorPos X="85" Y="93"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="room.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Room"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="25"/>
+        <CursorPos X="19" Y="51"/>
+        <UsageCount Value="33"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../lazarus3/lazarus/components/lazutils/textstrings.pas"/>
+        <UnitName Value="TextStrings"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="136"/>
+        <CursorPos Y="152"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/customform.inc"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="909"/>
+        <CursorPos Y="923"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2231"/>
+        <CursorPos Y="2244"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/customedit.inc"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="93"/>
+        <CursorPos Y="107"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/control.inc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="3618"/>
+        <CursorPos Y="3630"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/custommemo.inc"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="135"/>
+        <CursorPos Y="154"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/control.inc"/>
+        <Caret Line="5143" TopLine="5129"/>
+      </Position>
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/control.inc"/>
+        <Caret Line="5145" TopLine="5129"/>
+      </Position>
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/control.inc"/>
+        <Caret Line="3609" TopLine="3596"/>
+      </Position>
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/control.inc"/>
+        <Caret Line="3612" TopLine="3596"/>
+      </Position>
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/control.inc"/>
+        <Caret Line="3613" TopLine="3596"/>
+      </Position>
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/control.inc"/>
+        <Caret Line="3614" TopLine="3596"/>
+      </Position>
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/custommemo.inc"/>
+        <Caret Line="149" TopLine="135"/>
+      </Position>
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/custommemo.inc"/>
+        <Caret Line="150" TopLine="135"/>
+      </Position>
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/components/lazutils/textstrings.pas"/>
+        <Caret Line="150" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/components/lazutils/textstrings.pas"/>
+        <Caret Line="151" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/components/lazutils/textstrings.pas"/>
+        <Caret Line="152" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/custommemo.inc"/>
+        <Caret Line="154" TopLine="135"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="55" Column="26" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="54" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="102" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="104" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="114" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="65" Column="17" TopLine="49"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="54" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="103" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="105" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="107" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="109" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="110" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="122" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="57" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="125" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="127" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="../../lazarus3/lazarus/lcl/include/customedit.inc"/>
+        <Caret Line="107" TopLine="93"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="29" Column="51" TopLine="16"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="room.pas"/>
+        <Line Value="34"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="room.pas"/>
+        <Line Value="63"/>
+      </Item>
+    </BreakPoints>
+    <Watches>
+      <Item>
+        <Expression Value="currentRoom.Name"/>
+      </Item>
+      <Item>
+        <Expression Value="Rooms[0].Id "/>
+      </Item>
+      <Item>
+        <Expression Value="Roomcount"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>
